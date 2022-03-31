@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des étudiants</title>
+    <link rel="stylesheet" href="{% static 'student/css/bootstrap.css' %}">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center alert alert-danger">La gestion des étudiants</h2>
+    {% block contenu %}{% endblock %}
+</div>
+
+<script src="{% static 'student/js/jquery.js' %}"></script>
+<script src="{% static 'student/js/bootstrap.js' %}"></script>
+<script src="{% static 'student/js/popper.js' %}"></script>
+
+</body>
+</html>
